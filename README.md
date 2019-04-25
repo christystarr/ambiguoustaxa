@@ -1,4 +1,4 @@
-
+Please contact cstarrmeredith@gmail.com for any additional information about running the ambiguous taxa program
 
 #############################Part 1
 #Instructions: set working directory and put 2 input files in there. "Invertsinput.csv","lookup.csv". Example files are in the "data" folder on github. Column headings must match.
@@ -7,8 +7,8 @@
 #set method to "widespread" or "numerous; set method_divide to "nodivide or "divide";
 
 ##The final file is ambiguous_APTC_results.csv in the "all" folder, which has the original taxa (InvName), the new taxa when
-#ambiguous taxa are assigned at the site level (sitetaxa) and the new taxa when ambiguous taxa are assigned at the dataset level (newtaxa)
-# to produce final datasets for other common methods in Meredith et al., run extracode, part 2
+#ambiguous taxa are assigned at the site level (sitetaxa) and the new taxa when ambiguous taxa are assigned at the dataset level (newtaxa) according to the APTC_SG method
+# to produce final datasets for other common methods in Meredith et al., run extracode, part 2 (below)
 
 
 setwd("C:/christy/examples") # set working directory where input files are located; columns must be the same as in example)
