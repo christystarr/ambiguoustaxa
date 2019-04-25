@@ -1,4 +1,5 @@
 Please contact cstarrmeredith@gmail.com for any additional information about running the ambiguous taxa program
+The readme file is best viewed by at https://raw.githubusercontent.com/christystarr/ambiguoustaxa/master/README.md as the information below has errors.
 
 #############################Part 1
 #Instructions: set working directory and put 2 input files in there. "Invertsinput.csv","lookup.csv". Example files are in the "data" folder on github. Column headings must match.
@@ -10,7 +11,7 @@ Please contact cstarrmeredith@gmail.com for any additional information about run
 #ambiguous taxa are assigned at the site level (sitetaxa) and the new taxa when ambiguous taxa are assigned at the dataset level (newtaxa) according to the APTC_SG method
 # to produce final datasets for other common methods in Meredith et al., run extracode, part 2 (below)
 
-
+#Instructions for APTC_SG Method
 setwd("C:/christy/examples") # set working directory where input files are located; columns must be the same as in example)
 method="numerous"  #options are "numerous" or "widespread" (see Meredith et al. 2019)
 method_divide="divide" #options are "divide" or "nodivide" (see Meredith et al. 2019)
@@ -22,7 +23,7 @@ library(devtools)
 install_github("christystarr/ambiguoustaxa")
 library(ambiguoustaxa)
 
-inverts=read.table("invertsinput.csv",sep=",",header=TRUE)
+inverts=read.table("invertsinput.csv",sep=",",header=TRUE) # place example files from github in your working directory or create your own invertsinput.csv and lookup.csv
 lookup=read.table("lookup.csv",sep=",",header=TRUE)
 
 setup(lookup)
